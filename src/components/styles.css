@@ -1,0 +1,273 @@
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  
+  -webkit-user-drag: none;
+}
+
+
+html,
+body,
+#root {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+ 
+  overflow: hidden;
+  background: transparent;
+  cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39, auto;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  left:0;
+  top:0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: 'blur(20px)';
+  z-index:-1;
+}
+#grad1 {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  filter:blur(20px) contrast(200%) brightness(1.8);
+  background: radial-gradient(#e66465, transparent);
+}
+
+.radio-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+ 
+}
+
+.radio-container {
+margin-bottom: 30%;
+}
+
+.inner-circle{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: blue;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top:0;
+  left:0;
+  pointer-events:none;
+}
+
+
+
+
+
+
+canvas {
+  position:absolute;
+ 
+  left:0;
+  top:0;
+  z-index:-1;
+}
+
+.top-container {
+  z-index: 250;
+}
+
+.script-box {
+  position: absolute;
+
+
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 500px;
+  min-height: 500px;
+  
+}
+
+.radio-station {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.middle-block {
+  width: 100%;
+  height: 100%;
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+  align-items:center;
+  justify-content: center;
+overflow: hidden;
+padding: 20px;
+  
+}
+
+.middle-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow-y: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.list-item {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+font-weight: 500;
+}
+
+.left-middle-block {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.tracking-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-style: italic;
+  font-size: 14px;
+  color: black;
+}
+
+.tracking-title {
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.bottom-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-style: italic;
+
+
+}
+
+span {
+  font-weight: 500;
+}
+
+
+.switch {
+  display: inline-block;
+  height: 40px;
+  position: relative;
+  width: 75px;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+  background-color: transparent;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  border: 1px solid #3336DC;
+  
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background: linear-gradient(#3336DC, #9198e5);;
+  bottom: 4px;
+  content: "";
+  height: 30px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 30px;
+}
+
+input:checked + .slider {
+  background-color: transparent;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+ 
+}
+
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'DM Serif Display', serif;
+ 
+  
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
+
+

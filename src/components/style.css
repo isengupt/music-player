@@ -1,0 +1,42 @@
+.page {
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .odometer {
+    display: inline-block;
+    height: 1em;
+font-family: 'DM Serif Display', serif;;
+    font-size: 50px;
+    line-height: 1em;
+    font-weight: 700;
+    color: rgba(0,0,0,0.5);
+    mix-blend-mode: multiply;
+   
+  }
+
+  
+  
+  .digit {
+    display: inline-block;
+    width: 0.6em;
+    height: 1em;
+    overflow: hidden;
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+
+
+
+  }
+  
+  .digit.narrow {
+    width: 0.3em;
+  }
+  
+  .radio-station {
+    font-weight: 500;
+    color: rgba(0,0,0,0.5);
+    mix-blend-mode: multiply;
+  }
